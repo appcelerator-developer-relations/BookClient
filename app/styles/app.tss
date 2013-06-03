@@ -1,0 +1,27 @@
+"Window": {
+	modal: true,
+	backgroundColor: 'white',
+	layout: 'vertical'
+},
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	top: '10dp',
+	font: {
+		fontSize: '14dp'
+	}	
+},
+"Button": {
+	top: '10dp'
+},
+"TextField": {
+	borderColor: 'gray',
+	top: '10dp'
+},
+"TableViewRow[platform=android]": {
+	font: {
+		fontSize: '18dp',
+		fontWeight: 'bold'
+	}
+}
