@@ -1,0 +1,13 @@
+<Alloy>
+	<Window title="Book Details" onAndroidbackbutton="closeMe">
+		<RightNavButton platform="ios">
+			<Button onClick="closeMe">Close</Button>
+		</RightNavButton>
+		<Label>Title:</Label>
+		<TextField id="title"/>
+		<Label>Author:</Label>		
+		<TextField id="author"/>
+		<Button onClick="updateBook">Save Edits</Button>
+		<Button onClick="deleteBook">Remove</Button>	
+	</Window>
+</Alloy>
