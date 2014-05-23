@@ -1,5 +1,5 @@
 <Alloy>
-	<Collection src="book">
+	<Collection src="book"/>
 	<Window title="MyLibrary" exitOnClose="true" onOpen="loadExtras">
 		<RightNavButton platform="ios">
 			<Button onClick="addBook">Add</Button>
