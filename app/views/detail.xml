@@ -1,8 +1,5 @@
 <Alloy>
 	<Window title="Book Details" onAndroidbackbutton="closeMe">
-		<RightNavButton platform="ios">
-			<Button onClick="closeMe">Close</Button>
-		</RightNavButton>
 		<Label>Title:</Label>
 		<TextField id="title"/>
 		<Label>Author:</Label>		

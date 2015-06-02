@@ -1,0 +1,13 @@
+<Alloy>
+	<Collection src="book"/>
+	<NavigationWindow platform="ios">
+		<Window title="MyLibrary" exitOnClose="true">
+			<RightNavButton platform="ios">
+				<Button onClick="addBook">Add</Button>
+			</RightNavButton>
+			<TableView dataCollection="book" top="10" onDragEnd="refreshTable">
+				<TableViewRow title="{title}" color="black" onClick="showBook"/>
+			</TableView>
+		</Window>
+	</NavigationWindow>
+</Alloy>

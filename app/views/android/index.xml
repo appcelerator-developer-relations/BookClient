@@ -1,9 +1,10 @@
 <Alloy>
 	<Collection src="book"/>
-	<Window title="MyLibrary" exitOnClose="true" onOpen="loadExtras">
-		<RightNavButton platform="ios">
-			<Button onClick="addBook">Add</Button>
-		</RightNavButton>
+	<Window title="MyLibrary" exitOnClose="true">
+		<Menu>
+			<MenuItem id="addAction" onClick="addBook" />
+			<MenuItem id="refreshAction" onClick="refreshTable" />
+		</Menu>
 		<TableView dataCollection="book" top="10" onDragEnd="refreshTable">
 			<TableViewRow title="{title}" color="black" onClick="showBook"/>
 		</TableView>
