@@ -10,7 +10,11 @@ module.exports.sync = function(method, model, options) {
 
 	var payload = model.toJSON();
 	var error;
-
+	
+	if(typeof(model.config.adapter.base_url) != 'undefined'){
+		BASE_URL = model.config.adapter.base_url; 
+		// this enables other models using the same adapter to work, otherwise the BASE_URL variable persists
+	}
 	switch(method) {
 
 		// This case is called by the Model.fetch and Collection.fetch methods to retrieve data.
