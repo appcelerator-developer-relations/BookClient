@@ -13,8 +13,8 @@ function saveBook(e) {
 			},
 			{
 				wait: true, // Waits for a response from the server
-				success: function(model, response, options) {// Custom call after a successufl call.
-					var message = 'Successfully created '  + response.title + ' by ' + response.author + '!'
+				success: function(model, response, options) {// Custom call after a successful call.
+					var message = 'Successfully created '  + response.title + ' by ' + response.author + '!';
 					alert(message);
 					$.title.value = $.author.value = ''; // Clear the fields
 				},

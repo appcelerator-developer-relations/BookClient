@@ -1,10 +1,10 @@
 var args = arguments[0] || {};
-var book = args.toJSON();
-var model = args;
+	book = args.toJSON(),
+	model = args,
+	dialogs = require('alloy/dialogs');
+
 $.author.value = book.author || 'No author';
 $.title.value = book.title || 'No title';
-
-var dialogs = require('alloy/dialogs');
 
 function closeMe(e) {
 	$.detail.close();

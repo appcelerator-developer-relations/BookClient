@@ -17,11 +17,23 @@
 },
 "TextField": {
 	borderColor: 'gray',
-	top: '10dp'
+	top: '10dp',
+	color: 'black'
 },
 "TableViewRow[platform=android]": {
 	font: {
 		fontSize: '18dp',
 		fontWeight: 'bold'
 	}
+},
+'MenuItem' : {
+	showAsAction : Ti.Android.SHOW_AS_ACTION_ALWAYS
+},
+'#addAction' : {
+	title : 'Add',
+	icon : 'ic_menu_add.png',
+},
+'#refreshAction' : {
+	title : 'Refresh',
+	icon : 'ic_menu_refresh.png',
 }
